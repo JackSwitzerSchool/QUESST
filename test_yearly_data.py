@@ -63,11 +63,4 @@ def main():
     # Test recent year
     test_year(2023)
     
-    # Ask to test historical year
-    response = input("\nTest historical year (e.g., 2000)? (y/n): ")
-    if response.lower() == 'y':
-        year = int(input("Enter year: "))
-        test_year(year)
-
-if __name__ == '__main__':
-    main() 
+    # Ask

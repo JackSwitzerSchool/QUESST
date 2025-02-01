@@ -76,4 +76,8 @@ if __name__ == '__main__':
     # Run interactive tests first
     run_interactive_test()
     
-    # Ask if user wants to run 
+    # Ask if user wants to run unit tests
+    response = input("\nRun unit tests? (y/n): ")
+    if response.lower() == 'y':
+        print("\n=== Running Unit Tests ===")
+        unittest.main(argv=[''], exit=False) 

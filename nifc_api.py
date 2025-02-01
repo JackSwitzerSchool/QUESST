@@ -85,4 +85,17 @@ class NIFCApi:
             ]
             
         params = {
-           
+            'where': f'FIRE_YEAR = {year}',
+            'outFields': ','.join(fields),
+            'resultRecordCount': limit,
+            'resultOffset': offset,
+            'orderByFields': 'DISCOVERY_DATE ASC',
+            'returnGeometry': 'false'
+        }
+        
+        response = self._make_request(params)
+        return response.get('features', []) if response else None
+
+    def get_metadata(self) -> Optional[Dict]:
+        """Get API metadata including available fields"""
+        return self._make_request({'f': 'json'}, is_query=False) 
