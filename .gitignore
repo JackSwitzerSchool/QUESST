@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.project
+.pydevproject
+.settings/
+
+# Project specific
+data/NASA/*
+data/output/*
+data/processed/*
+!data/NASA/.gitkeep
+!data/output/.gitkeep
+!data/processed/.gitkeep
+
+# Generated files
+*.html
+*.log
+*.pkl
+*.csv
+*.json
+*.geojson
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.xml
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# OS specific
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Keep specific files
+!requirements.txt
+!setup.py
+!README.md
+!LICENSE
+!.gitignore
+!PRD.md 
